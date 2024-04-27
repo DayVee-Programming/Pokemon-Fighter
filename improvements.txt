@@ -1,0 +1,3 @@
+- make it responsive
+- hp stats
+- attack effect 
