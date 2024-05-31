@@ -10,14 +10,25 @@ body {
   font-family: cursive;
 }
 
+.box {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  flex-direction: column;
+}
+
 .form {
   display: flex;
   gap: 10px;
   padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .input {
-  font-size: 16px;
+  font-size: clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem);
   padding: 5px;
   border: 3px solid black;
   border-radius: 10px;
@@ -30,7 +41,7 @@ body {
   border: none;
   color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
   padding: 5px 10px;
   border-radius: 10px;
   font-family: inherit;
@@ -38,6 +49,8 @@ body {
 
 .info {
   padding: 5px 15px;
+  font-size: clamp(1.25rem, 1.023rem + 1.14vw, 1.875rem);
+  text-align: center;
 }
 
 .info-link {
@@ -47,12 +60,12 @@ body {
 .section {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .pokemon {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: center;
   margin: 10px;
   border: 3px solid black;
@@ -70,7 +83,7 @@ body {
 }
 
 .pokemon-attack {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .vs {
@@ -85,6 +98,13 @@ body {
 }
 
 .result {
-  padding: 5px 10px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    flex-direction: column;
+  }
 }
