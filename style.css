@@ -14,8 +14,6 @@ body {
   display: flex;
   gap: 30px;
   justify-content: center;
-  align-items: center;
-  height: 100svh;
   flex-direction: column;
 }
 
