@@ -59,11 +59,11 @@ class Pokemon {
       const span = this.result.querySelector(".result-span");
       span.style.color = "blue";
     } else if (attack === pcattack) {
-      this.result.innerHTML = `You picked "${name}" and PC picked "${pcname}". <span class="result-span">That's a draw!<span>`;
+      this.result.innerHTML = `You picked "${name}" and AI picked "${pcname}". <span class="result-span">That's a draw!<span>`;
       const span = this.result.querySelector(".result-span");
       span.style.color = "gray";
     } else {
-      this.result.innerHTML = `You picked "${name}" and PC picked "${pcname}". <span class="result-span">You lose!<span>`;
+      this.result.innerHTML = `You picked "${name}" and AI picked "${pcname}". <span class="result-span">You lose!<span>`;
       const span = this.result.querySelector(".result-span");
       span.style.color = "red";
     }

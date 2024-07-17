@@ -4,7 +4,7 @@ Pokemon Fighter is an interactive game from Pokémon main game series.
 
 ## Screenshots from the project
 
-<img src="/screenshot1.jpg" />
+<img src="./images/screenshot1.png" />
 
 ## How to run the project 
 

@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Battle</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div id="box" class="box">
       <div class="box__top">
+        <div class="box__top-pic">
+          <img src="./images/pokemon.jpg" alt="" class="box__top-pic-img" />
+        </div>
         <form class="form">
           <input
             class="input"
             autofocus
             type="text"
-            placeholder="Search for Pokemon"
+            placeholder="Pick your Pokemon fighter"
             required
           />
           <button class="button" type="submit">Search</button>
@@ -39,6 +42,6 @@
       </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
